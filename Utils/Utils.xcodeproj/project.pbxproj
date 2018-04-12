@@ -19,6 +19,10 @@
 		9BC8EFE2207F05510000F626 /* LSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFE1207F05510000F626 /* LSNavigationController.swift */; };
 		9BC8EFE4207F07390000F626 /* LSHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFE3207F07390000F626 /* LSHomeController.swift */; };
 		9BC8EFE9207F0FB80000F626 /* UIColor+LSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFE8207F0FB80000F626 /* UIColor+LSExtension.swift */; };
+		9BC8EFEB207F11BF0000F626 /* LSAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFEA207F11BF0000F626 /* LSAlert.swift */; };
+		9BC8EFED207F12070000F626 /* UIViewController+LSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFEC207F12070000F626 /* UIViewController+LSExtension.swift */; };
+		9BC8EFEF207F12F80000F626 /* String+LSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFEE207F12F80000F626 /* String+LSExtension.swift */; };
+		9BC8EFF1207F13A50000F626 /* LSAlertTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFF0207F13A50000F626 /* LSAlertTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		9BC8EFE1207F05510000F626 /* LSNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNavigationController.swift; sourceTree = "<group>"; };
 		9BC8EFE3207F07390000F626 /* LSHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSHomeController.swift; sourceTree = "<group>"; };
 		9BC8EFE8207F0FB80000F626 /* UIColor+LSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+LSExtension.swift"; sourceTree = "<group>"; };
+		9BC8EFEA207F11BF0000F626 /* LSAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSAlert.swift; sourceTree = "<group>"; };
+		9BC8EFEC207F12070000F626 /* UIViewController+LSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LSExtension.swift"; sourceTree = "<group>"; };
+		9BC8EFEE207F12F80000F626 /* String+LSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LSExtension.swift"; sourceTree = "<group>"; };
+		9BC8EFF0207F13A50000F626 /* LSAlertTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSAlertTableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				9BC8EFE7207F0F780000F626 /* Extension */,
+				9BC8EFEA207F11BF0000F626 /* LSAlert.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -210,6 +219,7 @@
 			children = (
 				9BC8EFDF207F04E90000F626 /* LSMainViewController.swift */,
 				9BC8EFE3207F07390000F626 /* LSHomeController.swift */,
+				9BC8EFF0207F13A50000F626 /* LSAlertTableController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				9BC8EFE8207F0FB80000F626 /* UIColor+LSExtension.swift */,
+				9BC8EFEC207F12070000F626 /* UIViewController+LSExtension.swift */,
+				9BC8EFEE207F12F80000F626 /* String+LSExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -374,10 +386,14 @@
 				9BC8EFE0207F04E90000F626 /* LSMainViewController.swift in Sources */,
 				9BC8EFE9207F0FB80000F626 /* UIColor+LSExtension.swift in Sources */,
 				9BC8EFE2207F05510000F626 /* LSNavigationController.swift in Sources */,
+				9BC8EFEF207F12F80000F626 /* String+LSExtension.swift in Sources */,
 				9BC8EFDE207F04B40000F626 /* LSBaseViewController.swift in Sources */,
 				9BC8EFA7207F018A0000F626 /* ViewController.swift in Sources */,
+				9BC8EFED207F12070000F626 /* UIViewController+LSExtension.swift in Sources */,
 				9BC8EFA5207F018A0000F626 /* AppDelegate.swift in Sources */,
+				9BC8EFF1207F13A50000F626 /* LSAlertTableController.swift in Sources */,
 				9BC8EFE4207F07390000F626 /* LSHomeController.swift in Sources */,
+				9BC8EFEB207F11BF0000F626 /* LSAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

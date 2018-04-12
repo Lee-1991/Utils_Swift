@@ -1,5 +1,5 @@
 //
-//  LSHomeController.swift
+//  LSAlertTableController.swift
 //  Utils
 //
 //  Created by Lee on 2018/4/12.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LSHomeController: UITableViewController {
+class LSAlertTableController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,31 +29,23 @@ class LSHomeController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier") ?? UITableViewCell(style: .default, reuseIdentifier: "reuseIdentifier")
-        cell.selectionStyle = .none
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
         // Configure the cell...
-        cell.textLabel?.text = "UIAlertController的样式修改"
 
         return cell
     }
- 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        LSAlert.alertViewAlert(title: "样式修改", message: "UIAlertController的样式修改", leftName: "取消", rightName: "确定", leftHandler: { (action) in
-            
-        }) { (action) in
-            
-        }
-    }
+    */
 
     /*
     // Override to support conditional editing of the table view.
