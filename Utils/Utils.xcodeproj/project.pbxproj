@@ -18,6 +18,7 @@
 		9BC8EFE0207F04E90000F626 /* LSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFDF207F04E90000F626 /* LSMainViewController.swift */; };
 		9BC8EFE2207F05510000F626 /* LSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFE1207F05510000F626 /* LSNavigationController.swift */; };
 		9BC8EFE4207F07390000F626 /* LSHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFE3207F07390000F626 /* LSHomeController.swift */; };
+		9BC8EFE9207F0FB80000F626 /* UIColor+LSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFE8207F0FB80000F626 /* UIColor+LSExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		9BC8EFDF207F04E90000F626 /* LSMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMainViewController.swift; sourceTree = "<group>"; };
 		9BC8EFE1207F05510000F626 /* LSNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNavigationController.swift; sourceTree = "<group>"; };
 		9BC8EFE3207F07390000F626 /* LSHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSHomeController.swift; sourceTree = "<group>"; };
+		9BC8EFE8207F0FB80000F626 /* UIColor+LSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+LSExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +139,8 @@
 		9BC8EFD2207F038F0000F626 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9BC8EFD4207F03D50000F626 /* Module */,
 				9BC8EFD3207F03C80000F626 /* Util */,
+				9BC8EFD4207F03D50000F626 /* Module */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -146,6 +148,7 @@
 		9BC8EFD3207F03C80000F626 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				9BC8EFE7207F0F780000F626 /* Extension */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -223,6 +226,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9BC8EFE7207F0F780000F626 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9BC8EFE8207F0FB80000F626 /* UIColor+LSExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC8EFE0207F04E90000F626 /* LSMainViewController.swift in Sources */,
+				9BC8EFE9207F0FB80000F626 /* UIColor+LSExtension.swift in Sources */,
 				9BC8EFE2207F05510000F626 /* LSNavigationController.swift in Sources */,
 				9BC8EFDE207F04B40000F626 /* LSBaseViewController.swift in Sources */,
 				9BC8EFA7207F018A0000F626 /* ViewController.swift in Sources */,
