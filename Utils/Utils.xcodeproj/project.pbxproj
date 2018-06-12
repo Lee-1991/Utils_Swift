@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B93E74920CF636A009A918C /* UIButton+LSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93E74820CF636A009A918C /* UIButton+LSExtension.swift */; };
 		9BC8EFA5207F018A0000F626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFA4207F018A0000F626 /* AppDelegate.swift */; };
 		9BC8EFA7207F018A0000F626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFA6207F018A0000F626 /* ViewController.swift */; };
 		9BC8EFAA207F018A0000F626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC8EFA8207F018A0000F626 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B93E74820CF636A009A918C /* UIButton+LSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+LSExtension.swift"; sourceTree = "<group>"; };
 		9BC8EFA1207F018A0000F626 /* Utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC8EFA4207F018A0000F626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BC8EFA6207F018A0000F626 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				9BC8EFE8207F0FB80000F626 /* UIColor+LSExtension.swift */,
 				9BC8EFEC207F12070000F626 /* UIViewController+LSExtension.swift */,
 				9BC8EFEE207F12F80000F626 /* String+LSExtension.swift */,
+				9B93E74820CF636A009A918C /* UIButton+LSExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 			files = (
 				9BC8EFE0207F04E90000F626 /* LSMainViewController.swift in Sources */,
 				9BC8EFE9207F0FB80000F626 /* UIColor+LSExtension.swift in Sources */,
+				9B93E74920CF636A009A918C /* UIButton+LSExtension.swift in Sources */,
 				9BC8EFE2207F05510000F626 /* LSNavigationController.swift in Sources */,
 				9BC8EFEF207F12F80000F626 /* String+LSExtension.swift in Sources */,
 				9BC8EFDE207F04B40000F626 /* LSBaseViewController.swift in Sources */,
