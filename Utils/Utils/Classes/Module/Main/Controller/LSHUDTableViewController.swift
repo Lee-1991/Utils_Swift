@@ -1,23 +1,19 @@
 //
-//  LSHomeController.swift
+//  LSHUDTableViewController.swift
 //  Utils
 //
-//  Created by Lee on 2018/4/12.
+//  Created by Lee on 2018/8/9.
 //  Copyright © 2018年 Lee. All rights reserved.
 //
 
 import UIKit
 
-class LSHomeController: UITableViewController {
+class LSHUDTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: NSStringFromClass(UITableViewCell.self))
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,15 +30,14 @@ class LSHomeController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 8
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier") ?? UITableViewCell(style: .default, reuseIdentifier: "reuseIdentifier")
-        cell.selectionStyle = .none
+        let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(UITableViewCell.self), for: indexPath)
+
         // Configure the cell...
-        
 
         return cell
     }
@@ -50,29 +45,53 @@ class LSHomeController: UITableViewController {
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            cell.textLabel?.text = "UIAlertController的样式修改"
+            cell.textLabel?.text = "Success"
         case 1:
-            cell.textLabel?.text = "LSHUD"
+            cell.textLabel?.text = "Error"
+        case 2:
+            cell.textLabel?.text = "Info"
+        case 3:
+            cell.textLabel?.text = "Loading"
+        case 4:
+            cell.textLabel?.text = "Loading with text"
+        case 5:
+            cell.textLabel?.text = "Text"
+        case 6:
+            cell.textLabel?.text = "Text2"
+        case 7:
+            cell.textLabel?.text = "Hide"
+        default:
+            break
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        switch indexPath.row {
+        case 0:
+            LSHUD.showSuccess("加载成功")
+        case 1:
+            LSHUD.showError("加载失败")
+        case 2:
+            LSHUD.showInfo("请先登录")
+        case 3:
+            LSHUD.showLoading()
+        case 4:
+            LSHUD.showLoading("loading...")
+        case 5:
+            LSHUD.showText("Hello,World!")
+        case 6:
+            let hud = LSHUD(text: "锄禾日当午汗滴禾下土", type: .text, delay: 0)
+            hud.backgroundColor = UIColor(red: 98/255, green: 162/255, blue: 238/255, alpha: 0.9)
+            hud.show()
+            hud.hide(delay: 3)
+        case 7:
+            LSHUD.hide()
         default:
             break
         }
     }
  
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0:
-            LSAlert.alertViewAlert(title: "样式修改", message: "UIAlertController的样式修改", leftName: "取消", rightName: "确定", leftHandler: { (action) in
-                
-            }) { (action) in
-                
-            }
-        case 1:
-            let vc = LSHUDTableViewController()
-            navigationController?.pushViewController(vc, animated: true)
-        default:
-            break
-        }
-    }
 
     /*
     // Override to support conditional editing of the table view.

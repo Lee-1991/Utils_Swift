@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		49582420211ADBD200D8EAC6 /* UIImage+LSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958241F211ADBD200D8EAC6 /* UIImage+LSExtension.swift */; };
+		49C6443A211C39EA00C9EE01 /* LSHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C64439211C39EA00C9EE01 /* LSHUD.swift */; };
+		49C6443C211C3A6100C9EE01 /* LSHUDTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6443B211C3A6100C9EE01 /* LSHUDTableViewController.swift */; };
 		9B93E74920CF636A009A918C /* UIButton+LSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93E74820CF636A009A918C /* UIButton+LSExtension.swift */; };
 		9BC8EFA5207F018A0000F626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFA4207F018A0000F626 /* AppDelegate.swift */; };
 		9BC8EFA7207F018A0000F626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC8EFA6207F018A0000F626 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		4958241F211ADBD200D8EAC6 /* UIImage+LSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+LSExtension.swift"; sourceTree = "<group>"; };
+		49C64439211C39EA00C9EE01 /* LSHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSHUD.swift; sourceTree = "<group>"; };
+		49C6443B211C3A6100C9EE01 /* LSHUDTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSHUDTableViewController.swift; sourceTree = "<group>"; };
 		9B93E74820CF636A009A918C /* UIButton+LSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+LSExtension.swift"; sourceTree = "<group>"; };
 		9BC8EFA1207F018A0000F626 /* Utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC8EFA4207F018A0000F626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 			children = (
 				9BC8EFE7207F0F780000F626 /* Extension */,
 				9BC8EFEA207F11BF0000F626 /* LSAlert.swift */,
+				49C64439211C39EA00C9EE01 /* LSHUD.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 				9BC8EFDF207F04E90000F626 /* LSMainViewController.swift */,
 				9BC8EFE3207F07390000F626 /* LSHomeController.swift */,
 				9BC8EFF0207F13A50000F626 /* LSAlertTableController.swift */,
+				49C6443B211C3A6100C9EE01 /* LSHUDTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 			files = (
 				9BC8EFE0207F04E90000F626 /* LSMainViewController.swift in Sources */,
 				9BC8EFE9207F0FB80000F626 /* UIColor+LSExtension.swift in Sources */,
+				49C6443A211C39EA00C9EE01 /* LSHUD.swift in Sources */,
 				9B93E74920CF636A009A918C /* UIButton+LSExtension.swift in Sources */,
 				49582420211ADBD200D8EAC6 /* UIImage+LSExtension.swift in Sources */,
 				9BC8EFE2207F05510000F626 /* LSNavigationController.swift in Sources */,
@@ -401,6 +408,7 @@
 				9BC8EFA5207F018A0000F626 /* AppDelegate.swift in Sources */,
 				9BC8EFF1207F13A50000F626 /* LSAlertTableController.swift in Sources */,
 				9BC8EFE4207F07390000F626 /* LSHomeController.swift in Sources */,
+				49C6443C211C3A6100C9EE01 /* LSHUDTableViewController.swift in Sources */,
 				9BC8EFEB207F11BF0000F626 /* LSAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
